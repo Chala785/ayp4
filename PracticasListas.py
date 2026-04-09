@@ -1,34 +1,23 @@
 class Nodo:
-    def __init__(self, Documento, Nombre):
-        self.documento = Documento
-        self.nombre = Nombre
-        self.siguiente = None
+    def __init__(self, documento, nombre):
+        self.documento = documento
+        self.nombre = nombre
+        self.siguiente =None
 
 class Lista:
     def __init__(self):
-        self.cabeza = None
+        self.cabeza =None
+        self.cola=None
 
-def append(self, Documento, Nombre):
-    new_node = Nodo(Documento, Nombre)
-    if  self.cabeza == None:
-        self.cabeza = new_node
-        return
-    else:
-        actual = self.cabeza
-        while actual.siguiente: 
-            actual = actual.siguiente
-        actual.siguiente = new_node
+    def AgregarAlInicio(self, documento,nombre):
+        nodo=Nodo(documento, nombre)
 
-def AgegarAlFinal(self, Documento, Nombre):
-    new_node = Nodo(Documento, Nombre)
-
-    if self.cabeza == None:
-        self.cabeza = Nodo
-        self.cola = Nodo
-    else:
-        self.cola.siguiente = Nodo
-        self.cola = Nodo 
-
-
-
-    
+        if self.cabeza==None:
+            self.cabeza=nodo
+            self.cola=nodo
+        else:
+            self.cola.siguiente=nodo
+            self.cola=nodo
+            while actual.siguiente:
+                actual=actual.siguiente
+            actual.siguiente=nodo
